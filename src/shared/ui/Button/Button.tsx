@@ -1,18 +1,17 @@
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss"
 
-interface ButtonProps {
-  children: React.ReactNode;
-  variant?: 'primary' | 'secondary';
-  onClick?: () => void;
+interface ButtomProps { 
+    children: React.ReactNode;
+    variant?: "primary" | "secondary";
+    onClick?: () => void;
 }
 
-export const Button = ({ children, variant = 'primary', onClick }: ButtonProps) => {
-  return (
-    <button
-      className={`${styles.button} ${styles[`button--${variant}`]}`}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-};
+export function Button ({ children,variant="primary",onClick }: ButtomProps) { 
+    return (
+        <button className={`${styles.button} ${styles[`button--${variant}`]}`}
+            onClick={onClick}
+        >
+            {children}
+        </button>
+    )
+}
