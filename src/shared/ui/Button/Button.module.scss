@@ -9,21 +9,21 @@
   transition: all 0.3s ease;
 
   &--primary {
-    background-color: #0070f3;
+    background-color: var(--primary-color, #0070f3);
     color: white;
 
     &:hover {
-      background-color: #005bb5;
+      background-color: var(--primary-color-dark, #005bb5);
     }
   }
 
   &--secondary {
     background-color: transparent;
-    border: 1px solid #0070f3;
-    color: #0070f3;
+    border: 1px solid var(--primary-color, #0070f3);
+    color: var(--primary-color, #0070f3);
 
     &:hover {
-      background-color: #0070f3;
+      background-color: var(--primary-color, #0070f3);
       color: white;
     }
   }
